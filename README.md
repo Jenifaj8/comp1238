@@ -1,18 +1,18 @@
 # COMP1238
 # Number Row Charcters
-- ~
-- !
-- @
-- \#
-- $
-- %
-- ^
-- &
-- \*
-- (
-- )
-- _
-- \+
+- ~ (Tilde)
+- ! (Exclamation Mark)
+- @ (At Symbol)
+- \# (Hash or Pound Sign)
+- $ (Dollar Sign)
+- % (Percentage Sign)
+- ^ (Caret)
+- & (Ampersand)
+- \* (Asterisk)
+- ( (Left Parenthesis)
+- ) (Right Parenthesis)
+- _ (Underscore)
+- \+ (Plus Sign)
 
 ## Links 
 - [Google Web Search](https://google.com)
@@ -23,24 +23,8 @@
 
 
 ## Experiments 
-😊
-😃
-😆
-😌
-😢
-⚱️
-😁
-🌨️
-⛅
-◀️
-⏬
-⏫
-⬇️
-➡️
-💙
-💜
-🤍
-❤️
-💞
-⭐
-🌻
+- 😊
+- 😃
+- 😆
+- 😌
+- 😢
