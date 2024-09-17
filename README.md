@@ -1,6 +1,5 @@
 # COMP1238
 ## Number Row Characters
-- ~ (Tilde)
 - ! (Exclamation Mark)
 - @ (At Symbol)
 - \# (Hash or Pound Sign)
@@ -11,8 +10,6 @@
 - \* (Asterisk)
 - ( (Left Parenthesis)
 - ) (Right Parenthesis)
-- _ (Underscore)
-- \+ (Plus Sign)
 
 ## Links 
 - [Google Web Search](https://google.com)
