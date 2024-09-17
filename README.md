@@ -1,5 +1,5 @@
 # COMP1238
-# Number Row Charcters
+## Number Row Characters
 - ~ (Tilde)
 - ! (Exclamation Mark)
 - @ (At Symbol)
