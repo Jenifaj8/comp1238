@@ -25,3 +25,14 @@
 - 😆
 - 😌
 - 😢
+
+## Keyboard shortcuts
+Shortcuts I frequently use:
+- Ctrl-Y (re-do)
+- Ctrl-Z (undo)
+- Ctrl-C (copy)
+
+Shortcuts I would like to start using:
+- Ctrl-T (new tab)
+- Alt-F4 (close window)
+- Ctrl-Shit-T (reopen closed tab)
