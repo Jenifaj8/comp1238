@@ -36,3 +36,6 @@ Shortcuts I would like to start using:
 - Ctrl-T (new tab)
 - Alt-F4 (close window)
 - Ctrl-Shit-T (reopen closed tab)
+
+#### CLI Commands
+[CLI commands](docs/cli.md)
