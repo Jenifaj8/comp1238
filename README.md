@@ -39,3 +39,5 @@ Shortcuts I would like to start using:
 
 #### CLI Commands
 [CLI commands](docs/cli.md)
+
+
