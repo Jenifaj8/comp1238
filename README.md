@@ -39,5 +39,11 @@ Shortcuts I would like to start using:
 
 #### CLI Commands
 [CLI commands](docs/cli.md)
+<<<<<<< HEAD
+
+
+=======
 
 #### Optional Challenge
+
+>>>>>>> 254025b5627caa54092e57d08541e27e149aec2e
