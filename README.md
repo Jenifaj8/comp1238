@@ -40,3 +40,7 @@ Shortcuts I would like to start using:
 #### CLI Commands
 [CLI commands](docs/cli.md)
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> bdbf46ef973e63318aea5c58876a096a07691099
