@@ -5,7 +5,8 @@
   },
   {
     "sport": "Basketball",
-    "team": "Lakers","city": "Los Angeles"
+    "team": "Lakers",
+    "city": "Los Angeles"
   },
   {
     "position": "Forward"
@@ -16,8 +17,9 @@
   },
   {
     "sport": "Soccer",
-    "team": "Inter Miami", "city": "Miami"
-  }, 
+    "team": "Inter Miami",
+    "city": "Miami"
+  },
   {
     "position": "Forward"
   },
@@ -27,7 +29,7 @@
   },
   {
     "sport": "Tennis", //string
-    "team": "N/A",//string "city": "N/A" //string
+    "team": "N/A", //string "city": "N/A" //string
   },
   {
     "position": "Player" //string
@@ -38,7 +40,8 @@
   },
   {
     "sport": "Football",
-    "team": "Buccaneers", "city": "Tampa Bay"
+    "team": "Buccaneers",
+    "city": "Tampa Bay"
   },
   {
     "position": "Quaterback"
