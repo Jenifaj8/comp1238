@@ -1,0 +1,25 @@
+---
+- name: LeBron James
+  age: 38
+- sport: Basketball
+  team: Lakers
+  city: Los Angeles
+- position: Forward
+- name: Lionel Messi
+  age: 36
+- sport: Soccer
+  team: Inter Miami
+  city: Miami
+- position: Forward
+- name: Serena Williams # string
+  age: 41 # string
+- sport: Tennis # string
+  team: N/A # string
+  city: N/A # string
+- position: Player # string
+- name: Tom Brady
+  age: 46
+- sport: Football
+  team: Buccaneers
+  city: Tampa Bay
+- position: Quaterback
