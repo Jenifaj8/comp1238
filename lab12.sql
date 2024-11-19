@@ -65,6 +65,94 @@ ORDER BY length(course_name) DESC limit 1;
 -- Result
 "Introduction To Full-Stack Development"	"38"
 
+-- Uppercase Course Names
+SELECT upper(course_name)
+FROM courses;
+
+-- Result
+"IT ESSENTIALS"
+"FUNDAMENTALS OF COMPUTING LOGIC"
+"INTRODUCTION TO WEB DEVELOPMENT"
+"INTRODUCTION TO DATA MANAGEMENT"
+"MATHEMATICS FOR COMPUTER TECHNOLOGY I"
+"COMMUNICATING ACROSS CONTEXTS"
+"DATABASE MANAGEMENT"
+"OBJECT-ORIENTED PROGRAMMING"
+"INTRODUCTION TO FULL-STACK DEVELOPMENT"
+"LINUX ESSENTIALS"
+"PERSONAL FINANCE"
+"MATHEMATICS FOR COMPUTER TECHNOLOGY II"
+"ADVANCED WEB PROGRAMMING"
+"APPLICATION DEVELOPMENT USING JAVA"
+"SOFTWARE QUALITY ASSURANCE"
+"WEB APPLICATION DEVELOPMENT"
+"SYSTEM ANALYSIS, DESIGN AND TESTING"
+"GENERAL EDUCATION ELECTIVE"
+"DATA STRUCTURES AND ALGORITHMS"
+"PROFESSIONAL WORKPLACE COMPETENCIES"
+"AGILE SOFTWARE DEVELOPMENT"
+"OPEN SOURCE DEVELOPMENT"
+"SYSTEM DEVELOPMENT PROJECT"
+"GENERAL EDUCATION ELECTIVE"
+"CAPSTONE PROJECT I"
+"MOBILE APPLICATION DEVELOPMENT I"
+"WEB APPLICATION DEVELOPMENT USING JAVA"
+"DEVOPS"
+"APPLIED DATA SCIENCE"
+"FULL STACK DEVELOPMENT I"
+"CAPSTONE PROJECT II"
+"INTRODUCTION TO CYBER SECURITY"
+"MOBILE APPLICATION DEVELOPMENT II"
+"APPLIED MACHINE LEARNING"
+"FULL STACK DEVELOPMENT II"
+
+
+-- Assignments Due in September
+SELECT title
+FROM assignments
+WHERE due_date LIKE '%-09-%'
+ORDER BY due_date;
+
+-- Result
+"Logic Gates Exercise"
+"Calculus Problem Set"
+"Network Setup Assignment"
+"SQL Query Assignment"
+"HTML/CSS Basics"
+"Communication Skills Essay"
+
+
+-- Assignments with Missing Due Dates
+INSERT INTO assignments (course_id, title, status)
+VALUES ('COMP1238', 'Assignment with no date', 'Not Started');
+
+SELECT course_id, title, status
+FROM assignments
+WHERE due_date IS NULL;
+
+-- Result
+"COMP1238"	"Assignment with no date"	"Not Started"
+"COMP1238"	"Assignment with no date"	"Not Started"
+"COMP1238"	"Assignment with no date"	"Not Started"
+"COMP1238"	"Assignment with no date"	"Not Started"
+"COMP1238"	"Assignment with no date"	"Not Started"
+"COMP1238"	"Assignment with no date"	"Not Started"
+"COMP1238"	"Assignment with no date"	"Not Started"
+"COMP1238"	"Assignment with no date"	"Not Started"
+"COMP1238"	"Assignment with no date"	"Not Started"
+"COMP1238"	"Assignment with no date"	"Not Started"
+"COMP1238"	"Assignment with no date"	"Not Started"
+"COMP1238"	"Assignment with no date"	"Not Started"
+"COMP1238"	"Assignment with no date"	"Not Started"
+"COMP1238"	"Assignment with no date"	"Not Started"
+"COMP1238"	"Assignment with no date"	"Not Started"
+"COMP1238"	"Assignment with no date"	"Not Started"
+"COMP1238"	"Assignment with no date"	"Not Started"
+"COMP1238"	"Assignment with no date"	"Not Started"
+"COMP1238"	"Assignment with no date"	"Not Started"
+"COMP1238"	"Assignment with no date"	"Not Started"
+
+
 
 
 
