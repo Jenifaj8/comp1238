@@ -153,7 +153,3 @@ WHERE due_date IS NULL;
 "COMP1238"	"Assignment with no date"	"Not Started"
 
 
-
-
-
-
