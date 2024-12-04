@@ -1,0 +1,139 @@
+-- Jenifa Joseph
+
+
+-- Q1 - List all the rectangles.
+SELECT *
+fROM rectangles;
+
+
+-- Q2 - How many rectangles are there?
+SELECT COUNT(*) AS total_rectangles 
+FROM rectangles;
+
+
+-- Q3 - What color is the widest rectangle?
+SELECT color
+FROM  rectangles
+ORDER BY width DESC limit 1;
+
+
+-- Q4 - What color is the tallest rectangle?
+SELECT color
+FROM  rectangles
+ORDER BY height DESC limit 1;
+
+
+-- Q5 - List all rectangles that are wider than tey are tall -
+SELECT *
+FROM  rectangles
+WHERE width > height;
+
+
+-- Q6 - Calculate and select area of each rectangle -
+SELECT color, width, height, (width*height)
+AS Area
+FROM  rectangles;
+
+
+-- Q7 - What color is the largest rectangle?
+SELECT color
+FROM  rectangles
+ORDER BY width * height 
+DESC LIMIT 1;
+
+
+-- Q8 - What color is the rectangle that extends most to the right?
+SELECT color
+FROM  rectangles
+ORDER BY (x + width) 
+DESC LIMIT 1;
+
+
+-- Q9 - Find rectangles with NULL color - 
+SELECT *
+FROM  rectangles
+WHERE color IS NULL;
+
+
+-- Q10 - List all the different colors -
+-- Without duplicates -
+SELECT DISTINCT color
+FROM  rectangles
+WHERE color IS NOT NULL;
+
+
+-- Q11 - List all the different named colors - 
+-- Without Duplicates
+SELECT DISTINCT color
+FROM  rectangles
+WHERE color NOT LIKE '#%';
+
+
+-- Q12 - List rectangle colors in upper case letters -
+SELECT UPPER(color) AS color_uppercase
+FROM  rectangles;
+
+
+-- Q13 - What is the course_id of the course with the longest name?
+SELECT course_id
+FROM  courses
+ORDER BY LENGTH(course_name)
+DESC LIMIT 1;
+
+
+-- Q14 - How many assignments are there with the due dates in 2024?
+SELECT COUNT(*) AS assignments_in_2024
+FROM  assignments
+WHERE date('%Y', due_date) = '2024';
+
+
+-- Q15 - Concatenate Course ID and name - 
+SELECT course_id || ': ' || course_name
+As course_details
+FROM  courses;
+
+
+-- Q16 - List courses with Labs on Mondays -
+SELECT course_id, course_name, lab_time
+FROM  courses
+WHERE lab_time LIKE '%MON%';
+
+
+-- Q17 - Past assignments - query to list all assignments with a due date before the current date - 
+SELECT *
+FROM assignments
+WHERE due_date < DATE('now');
+
+
+-- Q18 - How many assignments are there for each course - 
+SELECT course_id, COUNT(*) 
+AS assignment_count
+FROM assignments
+GROUP BY course_id;
+
+
+
+-- BONUS TASKS
+
+-- Q1 - List the number of assignments per semester - 
+SELECT c.semester, COUNT(*) 
+AS assignment_count
+FROM assignments a
+JOIN courses c ON a.course_id = c.course_id
+GROUP BY c.semester;
+
+
+-- Q2 - Show the red component of all the RGB colors - 
+SELECT color,SUBSTR(color, 2, 2) AS red_component
+FROM rectangles
+WHERE color LIKE '#%';
+
+
+
+
+
+
+
+
+
+
